@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post 'notification', to: 'notification#create'
   devise_for :users
   root to: 'home#index'
   get 'order/new'
